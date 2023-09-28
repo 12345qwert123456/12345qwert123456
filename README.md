@@ -1,20 +1,24 @@
 ```python3
 class Attributes():
 	@staticmethod
-	def coding() -> tuple:
-		langs = {
-			'medium':   ['Python3'],
-			'low': ['JS', 'PHP', 'SQL', 'Java'],
-			'learning': ['Ruby']
+	def knowledge() -> tuple:
+		platforms = {
+			'medium': 	['Windows', 'Linux'],
+			'basic':	['Android', 'iOS']
 		}
-		frameworks = ['Yii2', 'Flask', 'Nuxt.js']
-		environnement = ['VScode', 'Android Studio', 'Docker','IntelliJ IDEA']
-		
-		return langs, frameworks, environnement
+		langs = {
+			'medium':   	['Python3'],
+			'low': 		['JS', 'PHP', 'SQL', 'Java', 'C'],
+			'learning': 	['Ruby', 'ASM']
+		}
+		frameworks = 		['Yii2', 'Flask', 'Spring']
+		tools = 		['VScode', 'Docker', 'Ghidra', 'Frida', 'Jadx', 'Mitmproxy', 'Burp Suite']
+
+		return platforms, langs, frameworks, tools
 	
 	@staticmethod
 	def skills() -> tuple:
-		specialties  = ['Security engineer', 'Web/App reverse engineer', 'Fullstack']
-		
+		specialties  = ['Security engineer', 'Reverse engineer', 'Pentester']
+
 		return specialties, vulnerability_statistics
 ```
