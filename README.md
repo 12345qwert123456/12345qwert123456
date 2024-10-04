@@ -3,16 +3,17 @@ class Attributes():
 	@staticmethod
 	def knowledge() -> tuple:
 		platforms = {
-			'medium': 	['Windows', 'Linux'],
+			'good': 	['Linux'],
+			'medium': 	['Windows'],
 			'basic':	['Android', 'iOS']
 		}
 		langs = {
-			'medium':   	['Python3'],
-			'low': 		['JS', 'PHP', 'SQL', 'Java', 'C'],
+			'medium':   	['Python3', 'C'],
+			'low': 		['JS', 'PHP', 'SQL', 'Java'],
 			'learning': 	['Ruby', 'ASM']
 		}
 		frameworks = 		['Yii2', 'Flask', 'Spring']
-		tools = 		['VScode', 'Docker', 'Ghidra', 'Frida', 'Jadx', 'Mitmproxy', 'Burp Suite']
+		tools = 		['VScode', 'Docker', 'Ghidra', 'Frida', 'Jeb', 'Mitmproxy', 'Burp Suite']
 
 		return platforms, langs, frameworks, tools
 	
@@ -20,5 +21,5 @@ class Attributes():
 	def skills() -> tuple:
 		specialties  = ['Security engineer', 'Reverse engineer', 'Pentester']
 
-		return specialties, vulnerability_statistics
+		return specialties
 ```
