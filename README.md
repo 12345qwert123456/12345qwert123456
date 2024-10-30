@@ -1,5 +1,5 @@
 ```python3
-class Attributes():
+class Attributes():   
     @staticmethod
     def knowledge() -> tuple:
         platforms = {
@@ -8,19 +8,22 @@ class Attributes():
             'basic':   ['Android', 'iOS']
         }
         langs = {
-            'medium':   ['Python3', 'C'],
-            'reading':  ['JS', 'PHP', 'SQL', 'Java'],
+            'medium':   ['Python3', 'C++'],
+            'reading':  ['JS', 'PHP', 'SQL', 'Java', 'C#'],
             'learning': ['Ruby', 'ASM']
         }
-        frameworks = ['Yii2', 'Flask', 'Spring']
         tools =      ['Docker', 'Ghidra', 'Frida', 'Jeb', 'Burp Suite']
 
-        return platforms, langs, frameworks, tools
+        return platforms, langs, tools
     
     @staticmethod
-    def skills() -> tuple:
+    def info() -> tuple:
         specialties  = ['Security engineer', 'Reverse engineer', 'Pentester']
         education =    ['Bachelor`s degree - Information Security']
-
-        return specialties, education
+        links = {
+            'HTB':      'https://app.hackthebox.com/profile/1667605',
+            'Github':   'https://github.com/12345qwert123456',
+            'Habr':     'https://career.habr.com/12345qwert123456'
+        }
+        return specialties, education, links
 ```
